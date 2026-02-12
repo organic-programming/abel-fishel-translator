@@ -1,0 +1,33 @@
+# Babel Fish Translator
+
+> *"One thought, every tongue."*
+
+Babel Fish is the multilingual holon. It translates Markdown documents
+between languages while preserving structure, YAML frontmatter, code
+blocks, and Cartouche metadata.
+
+Named after Douglas Adams' Babel Fish — the small, yellow, leech-like
+creature that provides instant translation when placed in the ear.
+
+## Commands
+
+```
+translate <file> --to <lang>               — translate a document
+translate <file> --to <lang> --from <lang> — explicit source language
+translate check <file>                     — verify a translation is up to date
+translate status                           — show translation coverage
+```
+
+## Status
+
+Identity defined. Code not yet implemented.
+
+## Organic Programming
+
+This holon is part of the [Organic Programming](https://github.com/Organic-Programming/seed)
+ecosystem. For context, see:
+
+- [Constitution](https://github.com/Organic-Programming/seed/blob/master/AGENT.md) — what a holon is
+- [Methodology](https://github.com/Organic-Programming/seed/blob/master/METHODOLOGY.md) — how to develop with holons
+- [Terminology](https://github.com/Organic-Programming/seed/blob/master/TERMINOLOGY.md) — glossary of all terms
+- [Contributing](https://github.com/Organic-Programming/seed/blob/master/CONTRIBUTING.md) — governance and standards
