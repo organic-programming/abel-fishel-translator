@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package abel_fishel_translator.v1;
+
+option go_package = "github.com/organic-programming/abel-fishel-translator/gen/go/abel_fishel_translator/v1;abelfisheltranslatorv1";
+
+// BabelFishService translates markdown documents while preserving structure.
+service BabelFishService {
+  rpc Translate(TranslateRequest) returns (TranslateResponse);
+  rpc CheckTranslation(CheckTranslationRequest) returns (CheckTranslationResponse);
+  rpc TranslationStatus(TranslationStatusRequest) returns (TranslationStatusResponse);
+}
+
+message TranslateRequest {
+  string input_markdown = 1;
+  string to_lang = 2;
+  string from_lang = 3;
+}
+
+message TranslateResponse {
+  string translated_markdown = 1;
+  string detected_source_lang = 2;
+}
+
+message CheckTranslationRequest {
+  string origin_markdown = 1;
+  string translated_markdown = 2;
+  string to_lang = 3;
+}
+
+message CheckTranslationResponse {
+  bool up_to_date = 1;
+  repeated string reasons = 2;
+}
+
+message TranslationDocument {
+  string path = 1;
+  string lang = 2;
+  bool exists = 3;
+}
+
+message TranslationStatusRequest {
+  repeated TranslationDocument documents = 1;
+}
+
+message TranslationStatusResponse {
+  int32 total_documents = 1;
+  int32 translated_documents = 2;
+  repeated TranslationDocument missing_documents = 3;
+  float coverage = 4;
+}
