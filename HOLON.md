@@ -1,7 +1,7 @@
 ---
 # Holon Identity v1
 uuid: "31d98dfa-c08e-4db5-ab4f-180cecad50ef"
-given_name: "Babel Fish"
+given_name: "Abel-Fishel"
 family_name: "Translator"
 motto: "One thought, every tongue."
 composer: "B. ALTER"
@@ -32,13 +32,13 @@ lang: "go"
 proto_status: draft
 ---
 
-# Babel Fish Translator
+# Abel-Fishel Translator
 
 > *"One thought, every tongue."*
 
 ## Description
 
-Babel Fish Translator is the multilingual holon. It translates Markdown
+Abel-Fishel Translator is the multilingual holon. It translates Markdown
 documents between languages while preserving structure, YAML frontmatter,
 code blocks, and Cartouche metadata.
 

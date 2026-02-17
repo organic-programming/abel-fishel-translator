@@ -1,6 +1,6 @@
 ---
 # Cartouche v1
-title: "Babel Fish Translator"
+title: "Abel-Fishel Translator"
 author:
   name: "B. ALTER"
   copyright: "© 2026 Benoit Pereira da Silva"
@@ -15,7 +15,7 @@ access:
   agents: false
 status: draft
 ---
-# Babel Fish Translator
+# Abel-Fishel Translator
 
 > *"One thought, every tongue."*
 
