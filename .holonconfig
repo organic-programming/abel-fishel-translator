@@ -1,0 +1,4 @@
+# abel-fishel-translator — holon-level preferences
+lang: go
+test_framework: go_test
+proto_style: single_file

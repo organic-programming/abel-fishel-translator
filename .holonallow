@@ -1,0 +1,5 @@
+# Tools abel-fishel-translator is authorized to invoke
+go
+git
+protoc
+gemini
